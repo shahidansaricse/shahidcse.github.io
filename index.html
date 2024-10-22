@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.6;
+}
+.header1 {
+    height: auto;
+    background-color: #f3971b;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header2 {
+    min-height: 100vh; 
+    background-color: #292929;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.name1 {
+    margin-top: 15px;
+    font-size: 3rem;
+    color: #f3971b;
+}
+.box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.box-img {
+    border-radius: 50%;
+    background-image: url('image.jpg');
+    background-size: cover;
+    height: 30vw; 
+    width: 40vw;
+       padding-top: 100%;   
+    max-height: 385px; 
+    max-width: 260px;   
+}
+.about{
+    color:#f3971b;
+}
+.skill-container, .intro1, .project-item, .edu, .Contact {
+    margin: 20px 0;
+    width: 100%; 
+}
+h1, h2, h3 {
+    margin: 10px 0;
+}
+.header4 {
+    height: auto; 
+    background-color: #303030;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+@media (max-width: 768px) {
+    .header1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .header2, .header3 {
+        padding: 20px 10px;
+    }
+    .box-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-img {
+        margin-bottom: 20px;
+        height: 50vw; 
+        width: 70vw;  
+    }
+    .skill-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p, .h1, .h2, .Contact {
+        text-align: center; 
+    }
+}
+@media (max-width: 480px) {
+    .name1 {
+        font-size: 2.5rem; 
+    }
+    .navbar a {
+        font-size: 0.9rem; 
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header1">
+        <h2 class="logo">Md Shahid Ansari</h2>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="header2">
+        <section id="home">
+            <h3 class="name">Hi, I'm Md Shahid Ansari</h3>
+            <h2 class="name1">Web Developer</h2>
+        </section>   
+        <div class="box-content">
+            <div class="box-img"></div>
+        </div>
+        <section id="about">
+            <h2 class="about">~<u>About</u> me</h2>
+            <div class="intro1">
+                    <p>Hi, I’m Md Shahid Ansari.I am pursuing a Bachelor of Technology (B.Tech) 
+                        in Computer Science and Engineering (CSE) at RD Engineering College, Ghaziabad, 
+                        affiliated with Dr. APJ Abdul Kalam Technical University, Lucknow. I completed 
+                        my class 12th at Cambridge Senior Secondary School in Buxar, Bihar.I am from Buxar Bihar.
+                        My Hobbies is Reading Books and Playing games and solving new problems and learning new technologies.
+                        My Aim is becoming a good Software Engineer and a good Human being in Life.</p>
+                </div>
+        </section>
+        <section id="skills">
+            <h1>My Skills</h1>
+            <div class="skill-container">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">C</div>
+                <div class="skill-item">Python</div>
+            </div>
+        </section>
+        <section id="project">
+            <h1>Projects</h1>
+            <div class="project-item">
+                <p>Clon of Amazon and Portfolio website using HTML and CSS</p>
+                <p>Banking System and Restaurant menu project using C</p>
+                <p>Mini projects in Python: Banking System and To-do List</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h1>Education</h1>
+            <div class="edu">
+                <p>Class 10th: D B Public School Dobahan Mufassil Bhojpur Bihar</p>
+                <p>Class 12th: Cambridge Sr Sec School Kathkauli Buxar Bihar</p>
+                <p>Graduation (B.Tech CSE): Rd Engineering College Ghaziabad</p>
+                <p>Affiliated with Dr. APJ Abdul Kalam Technical University Lucknow (2023-27)</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div class="Contact">
+                <p>Mobile No.: 9341072349</p>
+                <p>Email: mdshahidans2005@gmail.com</p>
+            </div>
+        </section>
+    </header>
+    <header class="header4">
+        <a class="font" >Linkdin</a>
+        <a class="font" >Twitter</a>
+        <a class="font" >Email</a>
+      
+        <a href="#home" >
+        <font face="arial" color="#ffffff" size="5">
+                Top
+        </font>
+        </a>
+    </div>  
+    </header>   
+</body>
+</html>
